@@ -64,6 +64,12 @@
     }
 }
 
+// Calling dyld functions
+// TODO
+- (void)dyIntt {
+    // TODO call _dyld_image_count() and _dyld_get_image_name() - should not return on non-jailbroken devices
+}
+
 // Blocking the debugger
 // We can deny any attachment of a debugger with ptrace deny.
 - (void)ptDeny {
