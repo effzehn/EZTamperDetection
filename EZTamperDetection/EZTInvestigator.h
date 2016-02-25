@@ -15,11 +15,9 @@ typedef NS_OPTIONS(NSInteger, EZTInvResult) {
     EZTInvResultApCmp = 1 << 2
 };
 
-
 @interface EZTInvestigator : NSObject
 
 @property (nonatomic, assign) EZTInvResult result;
-
 - (void)start;
 
 @end

@@ -11,14 +11,6 @@
 #include <spawn.h>
 #include <sys/stat.h>
 
-@interface EZTInvestigator ()
-
-@property (nonatomic, assign) NSUInteger cmpr;
-
-@end
-
-
-
 @implementation EZTInvestigator
 
 - (void)start {
