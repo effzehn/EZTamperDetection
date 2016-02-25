@@ -13,6 +13,7 @@
 		8B7B09951C7DB9DB0005A49C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7B09931C7DB9DB0005A49C /* Main.storyboard */; };
 		8B7B09971C7DB9DB0005A49C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B7B09961C7DB9DB0005A49C /* Assets.xcassets */; };
 		8B7B099A1C7DB9DB0005A49C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7B09981C7DB9DB0005A49C /* LaunchScreen.storyboard */; };
+		8B7B09A31C7DBCB60005A49C /* EZTInvestigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7B09A21C7DBCB60005A49C /* EZTInvestigator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		8B7B09961C7DB9DB0005A49C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B7B09991C7DB9DB0005A49C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B7B099B1C7DB9DB0005A49C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B7B09A11C7DBCB60005A49C /* EZTInvestigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZTInvestigator.h; sourceTree = "<group>"; };
+		8B7B09A21C7DBCB60005A49C /* EZTInvestigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZTInvestigator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				8B7B098E1C7DB9DB0005A49C /* AppDelegate.m */,
 				8B7B09901C7DB9DB0005A49C /* ViewController.h */,
 				8B7B09911C7DB9DB0005A49C /* ViewController.m */,
+				8B7B09A11C7DBCB60005A49C /* EZTInvestigator.h */,
+				8B7B09A21C7DBCB60005A49C /* EZTInvestigator.m */,
 				8B7B09931C7DB9DB0005A49C /* Main.storyboard */,
 				8B7B09961C7DB9DB0005A49C /* Assets.xcassets */,
 				8B7B09981C7DB9DB0005A49C /* LaunchScreen.storyboard */,
@@ -151,6 +156,7 @@
 			files = (
 				8B7B09921C7DB9DB0005A49C /* ViewController.m in Sources */,
 				8B7B098F1C7DB9DB0005A49C /* AppDelegate.m in Sources */,
+				8B7B09A31C7DBCB60005A49C /* EZTInvestigator.m in Sources */,
 				8B7B098C1C7DB9DB0005A49C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +219,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -251,7 +257,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

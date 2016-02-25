@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "EZTInvestigator.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self performCheck];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+- (void)performCheck {
+    EZTInvestigator *investigator = [EZTInvestigator new];
+    [investigator start];
+    
+    EZTInvResult result = investigator.result;
+    
+    self.stat1.text = (result & EZTInvResultSBCmp) ? @"Sandbox compromised" : @"Sandbox unsuspicious";
+    self.stat2.text = (result & EZTInvResultFSCmp) ? @"Filesystem compromised!" : @"Filesystem unsuspicious";
+    self.stat3.text = (result & EZTInvResultApCmp) ? @"Application directory compromised!" : @"Application directory unsuspicious";
 }
 
 @end

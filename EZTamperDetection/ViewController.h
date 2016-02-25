@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet UILabel *stat1;
+@property (nonatomic, strong) IBOutlet UILabel *stat2;
+@property (nonatomic, strong) IBOutlet UILabel *stat3;
 
 @end
 
