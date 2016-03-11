@@ -13,6 +13,7 @@
 @property (nonatomic, strong) IBOutlet UILabel *stat1;
 @property (nonatomic, strong) IBOutlet UILabel *stat2;
 @property (nonatomic, strong) IBOutlet UILabel *stat3;
+@property (nonatomic, strong) IBOutlet UILabel *stat4;
 
 @end
 

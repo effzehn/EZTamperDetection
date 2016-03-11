@@ -12,7 +12,8 @@ typedef NS_OPTIONS(NSInteger, EZTInvResult) {
     EZTInvestigatorNoCmp = 0,
     EZTInvResultSBCmp = 1 << 0,
     EZTInvResultFSCmp = 1 << 1,
-    EZTInvResultApCmp = 1 << 2
+    EZTInvResultApCmp = 1 << 2,
+    EZTInvResultDyCmp = 1 << 3
 };
 
 @interface EZTInvestigator : NSObject

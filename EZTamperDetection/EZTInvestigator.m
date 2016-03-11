@@ -10,6 +10,8 @@
 
 #include <spawn.h>
 #include <sys/stat.h>
+#include <mach-o/dyld.h>
+
 
 @implementation EZTInvestigator
 
@@ -17,6 +19,7 @@
     [self sbIntt];
     [self fsIntt];
     [self apIntt];
+    [self dyIntt];
 }
 
 // Test the sandbox integrity.
@@ -65,9 +68,18 @@
 }
 
 // Calling dyld functions
-// TODO
+// A jailbroken device typically contains suspicious dynamic libraries
 - (void)dyIntt {
-    // TODO call _dyld_image_count() and _dyld_get_image_name() - should not return on non-jailbroken devices
+    uint32_t image_count, i;
+    image_count = _dyld_image_count();
+    for (i = 0; i < image_count; i++) {
+        const char* tc = _dyld_get_image_name(i);
+        NSString *test = [NSString stringWithCString:tc encoding:NSUTF8StringEncoding];
+        
+        if ([test containsString:@"MobileSubstrate.dylib"] || [test containsString:@"SubstrateLoader.dylib"]) {
+            self.result |= EZTInvResultDyCmp;
+        }
+    }
 }
 
 // Blocking the debugger
