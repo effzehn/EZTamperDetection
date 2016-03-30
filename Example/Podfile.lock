@@ -1,0 +1,14 @@
+PODS:
+  - EZTamperDetection (1.0.0)
+
+DEPENDENCIES:
+  - EZTamperDetection (from `../`)
+
+EXTERNAL SOURCES:
+  EZTamperDetection:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  EZTamperDetection: fff6b6a08e8ecb507188ac887dcfb8c98fb34b25
+
+COCOAPODS: 0.39.0

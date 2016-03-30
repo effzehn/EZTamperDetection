@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "EZTamperDetection"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of EZTamperDetection."
+  s.version          = "1.0.0"
+  s.summary          = "A small class to determine if it's code is exectued on a jailbroken device."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,22 +17,26 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+This tamper detection can be integrated into an iOS Application or Framework. It tests for common hot spots on jailbroken devices:
+
+an open sandbox
+filesystem abnormalities
+Application directory type
+existence of certain dynamic libraries
+On a vanilla jailbroken iOS 9.0.2 device it detects filesystem abnormalities and if the Application directory is replaced by a symbolic link. Method names are rather cryptic on purpose.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/EZTamperDetection"
+  s.homepage         = "https://github.com/effzehn/EZTamperDetection"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Andre Hoffmann" => "dev@effzehn.de" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/EZTamperDetection.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/effzehn/EZTamperDetection.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'EZTamperDetection' => ['Pod/Assets/*.png']
-  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

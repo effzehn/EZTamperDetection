@@ -1,0 +1,6 @@
+framework module Pods_EZTamperDetection_Example {
+  umbrella header "Pods-EZTamperDetection_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
