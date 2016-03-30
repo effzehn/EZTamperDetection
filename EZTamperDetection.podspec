@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "EZTamperDetection"
   s.version          = "1.0.0"
-  s.summary          = "A small class to determine if it's code is exectued on a jailbroken device."
+  s.summary          = "A small class to determine if it's code is exectued on a jailbroken iOS device."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
