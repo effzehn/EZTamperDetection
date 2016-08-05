@@ -35,7 +35,7 @@ pod "EZTamperDetection"
 
 ## Author
 
-Andre Hoffmann, dev@effzehn.de
+Andre Hoffmann, dev - a t - effzehn.de
 
 ## License
 
